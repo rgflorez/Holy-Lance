@@ -34,10 +34,10 @@ if (!function_exists("exec") || !function_exists("shell_exec")) {
 <!--Horizontal Tab-->
 <div id="MainTab">
 	<ul class="resp-tabs-list main">
-		<li>性能</li>
-		<li>进程</li>
-		<li>环境</li>
-		<li>关于</li>
+		<li>RENDIMIENTO</li>
+		<li>PROCESOS</li>
+		<li>MEDIO AMBIENTE</li>
+		<li>EN</li>
 	</ul>
 	<div class="resp-tabs-container main">
 		<div>
@@ -46,8 +46,8 @@ if (!function_exists("exec") || !function_exists("shell_exec")) {
 			<div id="PerformanceTab">
 				<ul class="resp-tabs-list performance" id="PerformanceList">
 					<li>CPU<p><span class="tab-label" id="cpu_usage_label"></span></p></li>
-					<li>系统负载<p><span class="tab-label" id="load_usage_label"></span></p></li>
-					<li>内存<p><span class="tab-label" id="memory_usage_label"></span></p></li>
+					<li>LA CARGA DEL SISTEMA<p><span class="tab-label" id="load_usage_label"></span></p></li>
+					<li>MEMORIA<p><span class="tab-label" id="memory_usage_label"></span></p></li>
 				</ul>
 				<div class="resp-tabs-container performance" id="PerformanceContainer">
 					<div>
@@ -59,44 +59,44 @@ if (!function_exists("exec") || !function_exists("shell_exec")) {
 						<div class="info_block_container">
 							<div class="info_block">
 								<div class="info">
-									<span class="info-label">利用率</span>
+									<span class="info-label">UTILIZACIÓN</span>
 									<span class="info-content" id="cpu_usage_info">0%</span>
 								</div>
 								<div class="info">
-									<span class="info-label">速度</span>
+									<span class="info-label">VELOCIDAD</span>
 									<span class="info-content" id="cpu_frequency">0 GHz</span>
 								</div>
 								<div class="info-clear"></div>
 								<div class="info">
-									<span class="info-label">进程</span>
+									<span class="info-label">PROCESO</span>
 									<span class="info-content" id="process_number">0</span>
 								</div>
 								<div class="info-clear"></div>
 								<div class="info">
-									<span class="info-label">运行时间</span>
+									<span class="info-label">TIEMPO DE DURACIÓN</span>
 									<span class="info-content" id="uptime">0</span>
 								</div>
 							</div>
 
 							<div class="info_block">
 								<div class="info-inline">
-									<span class="info-inline-label">最大速度:</span>
+									<span class="info-inline-label">VELOCIDAD MÁXIMA:</span>
 									<span class="info-inline-content" id="cpu_max_frequency">0 GHz</span>
 								</div>
 								<div class="info-inline">
-									<span class="info-inline-label">插槽:</span>
+									<span class="info-inline-label">LAS RANURAS:</span>
 									<span class="info-inline-content" id="cpu_num">1</span>
 								</div>
 								<div class="info-inline">
-									<span class="info-inline-label">内核:</span>
+									<span class="info-inline-label">NÚCLEO:</span>
 									<span class="info-inline-content" id="cpu_core_num">1</span>
 								</div>
 								<div class="info-inline">
-									<span class="info-inline-label">逻辑处理器:</span>
+									<span class="info-inline-label">LOGICAL PROCESSOR:</span>
 									<span class="info-inline-content" id="cpu_processor_num">1</span>
 								</div>
 								<div class="info-inline">
-									<span class="info-inline-label">缓存:</span>
+									<span class="info-inline-label">EL ALMACENAMIENTO EN CACHÉ:</span>
 									<span class="info-inline-content" id="cpu_cache_size">0 MiB</span>
 								</div>
 							</div>
@@ -106,42 +106,42 @@ if (!function_exists("exec") || !function_exists("shell_exec")) {
 					</div>
 					<div>
 						<div class="chart-title-set">
-							<h2 class="chart-title">系统负载</h2>
+							<h2 class="chart-title">LA CARGA DEL SISTEMA</h2>
 						</div>
 						<div id="load_usage" style="width: 100%; height: 960px;"></div>
 					</div>
 					<div>
 						<div class="chart-title-set">
-							<h2 class="chart-title">内存</h2>
+							<h2 class="chart-title">MEMORIA</h2>
 							<span class="chart-sub-title" id="total_memory"></span>
 						</div>
 						<div id="memory_usage" style="width: 100%; height: 460px;"></div>
 						<div class="info_block_container">
 							<div class="info_block">
 								<div class="info">
-									<span class="info-label">使用中</span>
+									<span class="info-label">USO</span>
 									<span class="info-content" id="memory_usage_used">0 MiB</span>
 								</div>
 								<div class="info">
-									<span class="info-label">可用</span>
+									<span class="info-label">DISPONIBLE</span>
 									<span class="info-content" id="memory_usage_available">0 MiB</span>
 								</div>
 								<div class="info-clear"></div>
 								<div class="info">
-									<span class="info-label">Swap使用中</span>
+									<span class="info-label">Swap USO</span>
 									<span class="info-content" id="memory_usage_swap_used">0 MiB</span>
 								</div>
 								<div class="info">
-									<span class="info-label">Swap可用</span>
+									<span class="info-label">Swap DISPONIBLE</span>
 									<span class="info-content" id="memory_usage_swap_free">0 MiB</span>
 								</div>
 								<div class="info-clear"></div>
 								<div class="info">
-									<span class="info-label">已提交</span>
+									<span class="info-label">ENVIADO</span>
 									<span class="info-content" id="memory_submit">0 MiB</span>
 								</div>
 								<div class="info">
-									<span class="info-label">已缓存</span>
+									<span class="info-label">EN CACHÉ</span>
 									<span class="info-content" id="memory_usage_cache">0 MiB</span>
 								</div>
 							</div>
@@ -157,54 +157,54 @@ if (!function_exists("exec") || !function_exists("shell_exec")) {
 			<div class="info_block_container">
 				<div class="info_block">
 					<div class="info">
-						<span class="info-label">系统类型</span>
+						<span class="info-label">TIPO DE SISTEMA</span>
 						<span class="info-content"><?php echo php_uname('s'); ?></span>
 					</div>
 					<div class="info">
-						<span class="info-label">发行版信息</span>
+						<span class="info-label">INFORMACIÓN DEL AUTORIZACIÓN</span>
 						<span class="info-content" id="system_name"></span>
 					</div>
 					<div class="info">
-						<span class="info-label">系统版本</span>
+						<span class="info-label">VERSIÓN DEL SISTEMA</span>
 						<span class="info-content"><?php echo php_uname('r'); ?></span>
 					</div>
 					<div class="info">
-						<span class="info-label">系统语言</span>
+						<span class="info-label">IDIOMA DEL SISTEMA</span>
 						<span class="info-content"><?php echo $_SERVER['HTTP_ACCEPT_LANGUAGE']; ?></span>
 					</div>
 					<div class="info-clear"></div>
 
 					<div class="info">
-						<span class="info-label">PHP版本</span>
+						<span class="info-label">PHP LIBERACIÓN</span>
 						<span class="info-content"><?php echo phpversion(); ?></span>
 					</div>
 					<div class="info">
-						<span class="info-label">Zend引擎版本</span>
+						<span class="info-label">Zend VERSIÓN DEL MOTOR</span>
 						<span class="info-content"><?php echo zend_version(); ?></span>
 					</div>
 					<div class="info">
-						<span class="info-label">服务器解析引擎</span>
+						<span class="info-label">MOTOR DE ANÁLISIS DEL SERVIDOR</span>
 						<span class="info-content"><?php echo $_SERVER['SERVER_SOFTWARE']; ?></span>
 					</div>
 					<div class="info-clear"></div>
 
 					<div class="info">
-						<span class="info-label">服务器接口类型</span>
+						<span class="info-label">TIPO DE INTERFAZ DE SERVIDOR</span>
 						<span class="info-content"><?php echo php_sapi_name(); ?></span>
 					</div>
 					<div class="info">
-						<span class="info-label">服务器IP</span>
+						<span class="info-label">SERVIDOR IP</span>
 						<span class="info-content"><?php echo GetHostByName($_SERVER['SERVER_NAME']); ?></span>
 					</div>
 					<div class="info">
-						<span class="info-label">服务器端口</span>
+						<span class="info-label">PUERTO DEL SERVIDOR</span>
 						<span class="info-content"><?php echo $_SERVER['SERVER_PORT']; ?></span>
 					</div>
 				
 					<div class="info-clear"></div>
 				<?php foreach(get_loaded_extensions() as $extension): ?>
 					<div class="info">
-						<span class="info-label">已编译扩展: </span>
+						<span class="info-label">COMPILADO EXTENDIDA: </span>
 						<span class="info-content" id="cpu_max_frequency"><?php echo $extension; ?></span>
 					</div>
 				<?php endforeach; ?>
