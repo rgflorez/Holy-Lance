@@ -1,6 +1,12 @@
 # Holy Lance    [![Build Status](https://travis-ci.org/lincanbin/Holy-Lance.svg?branch=master)](https://travis-ci.org/lincanbin/Holy-Lance)
 A Linux Resource / Performance Monitor based on PHP. 
 
+##Observation:
+
+This version brings the Spanish translation incipient application. It has not changed any other aspect of the application.
+
+Esta versión trae una traducción incipiente al español de la aplicación. No se ha modificado ningún otro aspecto de la aplicación.
+
 ## Demo/Official Website
 
 * [Demo](http://ipv4.94cb.com/Holy-Lance)
